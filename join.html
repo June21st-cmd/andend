@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공동행동 "앤드" (END, AND) | 참여 및 후원</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-section">
+        <span class="logo-icon">🚪</span>
+        <span class="logo-text">공동행동 앤드</span>
+      </a>
+      <nav>
+        <a href="about.html" class="nav-link">소개</a>
+        <a href="support.html" class="nav-link">피해자 지원</a>
+        <a href="culture.html" class="nav-link">교회문화 자료실</a>
+        <a href="archive.html" class="nav-link">활동/기록</a>
+        <a href="join.html" class="nav-link nav-cta active">참여/후원</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Website Cover -->
+  <main>
+    <div class="cover-wrapper cover-gradient-solidarity"></div>
+    
+    <div class="icon-container">
+      <span class="page-icon">🌱</span>
+    </div>
+
+    <!-- Page Contents -->
+    <div class="content-wrapper">
+      <a href="index.html" style="text-decoration: none; color: var(--color-primary); font-size: 0.95rem; font-weight: 600;">← 홈으로 돌아가기</a>
+      <h1 class="page-title">5. 참여 및 후원하기</h1>
+      
+      <!-- Slogan Callout -->
+      <div class="callout callout-vision">
+        <span class="callout-icon">💚</span>
+        <div class="callout-content">
+          <p><strong>"교회의 주인은 교인이며, 변화 역시 교인으로부터 시작됩니다."</strong><br>
+          앤드는 외부 단체의 일회성 지원에 목메지 않고, 뜻있는 한 사람 한 사람의 소중한 회비와 후원금으로 완전히 독립적으로 운영되는 풀뿌리 행동체입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="page-divider"></div>
+
+      <div class="notion-grid-2">
+        <!-- Membership Card -->
+        <div class="grid-col">
+          <h3>👥 활동 회원 안내</h3>
+          <p style="font-size: 0.95rem; color: var(--text-sub);">
+            앤드의 목적에 적극 동의하고 직접 행동으로 연대하고자 하시는 기장 구성원(목회자, 교사, 청년, 신학생 등)을 모십니다.
+          </p>
+          <ul style="padding-left: 18px; margin-bottom: 10px; font-size: 0.92rem;">
+            <li><strong>권한</strong>: 정기 총회 정식 의결권 부여, 앤드 핵심 모둠(부서) 결성 및 부서장 출마 권한 부여.</li>
+            <li><strong>회비 기준</strong>: 개인 정기 회비 납부. (단체 연대의 경우 신생/청년 단체 월 2만원, 일반 단체/교회 월 3만원 이상)</li>
+          </ul>
+        </div>
+
+        <!-- Sponsor Card -->
+        <div class="grid-col">
+          <h3>💰 정기/일시 후원회원 안내</h3>
+          <p style="font-size: 0.95rem; color: var(--text-sub);">
+            직접 실무 모둠에서 활동하기는 어려우나, 앤드의 가치에 공감하여 재정적인 연대로 지지해 주시는 분들입니다.
+          </p>
+          <ul style="padding-left: 18px; margin-bottom: 10px; font-size: 0.92rem;">
+            <li><strong>권한</strong>: 총회 참석 및 발언 가능 (의결권 제외).</li>
+            <li><strong>후원 용도</strong>: 피해자 긴급 심리 상담비 및 변호 소송 실비 지급, 성평등 책자 인쇄, 연례 모니터링 성찰 백서 발행 및 발송비.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-divider"></div>
+
+      <!-- Join Forms Simulators -->
+      <div class="notion-grid-2">
+        <!-- Form 1: Member/Sponsor Registration -->
+        <div class="grid-col" style="background-color: #ffffff;">
+          <h3>📝 회원/후원 가입 데모 폼</h3>
+          <p style="font-size: 0.85rem; margin-bottom: 15px;">정보를 입력하고 제출하시면 모의 신청 완료 안내(Toast)가 제공됩니다.</p>
+          
+          <form id="member-form">
+            <div class="form-group">
+              <label for="reg-name">이름 (또는 단체명)</label>
+              <input type="text" id="reg-name" class="form-control" placeholder="예: 홍길동" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="reg-email">이메일 주소</label>
+              <input type="email" id="reg-email" class="form-control" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-type">가입 유형</label>
+              <select id="reg-type" class="form-control">
+                <option value="member">활동 회원 (회비 납부 및 모둠 활동 참여)</option>
+                <option value="sponsor">정기 후원회원 (재정 연대)</option>
+                <option value="one-time">일시 후원</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-submit" style="width: 100%;">가입 신청하기</button>
+          </form>
+        </div>
+
+        <!-- Form 2: Module (Small group) Sign Up -->
+        <div class="grid-col" style="background-color: #ffffff;">
+          <h3>🧩 활동 모둠(팀) 가입 데모 폼</h3>
+          <p style="font-size: 0.85rem; margin-bottom: 15px;">함께 실무를 일구어 가고 싶은 관심 모둠을 선택하여 지원해 주세요.</p>
+          
+          <form id="module-form">
+            <div class="form-group">
+              <label for="mod-name">이름</label>
+              <input type="text" id="mod-name" class="form-control" placeholder="예: 성춘향" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mod-choice">참여하고 싶은 모둠</label>
+              <select id="mod-choice" class="form-control">
+                <option value="monitoring">🔎 사건 및 제도 모니터링 모둠 (교단 감시/헌의안)</option>
+                <option value="support">🤝 피해자 연대 및 지지 모둠 (상담/동행/치유)</option>
+                <option value="education">📚 성평등 문화 및 교육 모둠 (체크리스트/예배문)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mod-message">한 줄 다짐 및 소개</label>
+              <textarea id="mod-message" class="form-control" rows="3" placeholder="예: 평등한 교회를 위해 한 걸음 보태고 싶습니다." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" style="width: 100%; background-color: var(--color-accent);">모둠 참여 신청</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="about.html" class="footer-link">소개</a>
+      <a href="support.html" class="footer-link">피해자 지원</a>
+      <a href="culture.html" class="footer-link">자료실</a>
+      <a href="join.html" class="footer-link">후원/참여</a>
+    </div>
+    <p>© 2026 성폭력 없는 기장을 위한 공동행동 앤드 (END, AND). All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
