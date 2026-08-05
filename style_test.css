@@ -416,17 +416,10 @@ nav {
 
 .p-card-banner {
   height: 140px;
-  background-color: var(--color-primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
   transition: var(--transition-smooth);
-}
-
-.premium-card:hover .p-card-banner {
-  background-color: var(--color-accent-light);
-  color: var(--color-accent);
 }
 
 /* Specific banner icon sizes */
@@ -471,12 +464,84 @@ nav {
 .p-card-link-text {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--color-primary);
   transition: var(--transition-smooth);
 }
 
-.premium-card:hover .p-card-link-text {
-  color: var(--color-accent);
+/* Card Category Specific Styling (Warm Pastel Themes) */
+
+/* 1. About (Sage Green) */
+.premium-card.card-about .p-card-banner {
+  background-color: #E8EFE9;
+  color: #4A6B53;
+}
+.premium-card.card-about:hover .p-card-banner {
+  background-color: #D8E5DA;
+}
+.premium-card.card-about .p-card-link-text {
+  color: #4A6B53;
+}
+.premium-card.card-about:hover .p-card-link-text {
+  color: #3B5441;
+}
+
+/* 2. Support (Soft Rose) */
+.premium-card.card-support .p-card-banner {
+  background-color: #F6EBE8;
+  color: #C87A68;
+}
+.premium-card.card-support:hover .p-card-banner {
+  background-color: #EAD4CE;
+}
+.premium-card.card-support .p-card-link-text {
+  color: #C87A68;
+}
+.premium-card.card-support:hover .p-card-link-text {
+  color: #B25F4C;
+}
+
+/* 3. Culture (Warm Amber/Yellow) */
+.premium-card.card-culture .p-card-banner {
+  background-color: #F7F2E6;
+  color: #A07A4A;
+}
+.premium-card.card-culture:hover .p-card-banner {
+  background-color: #EDE2CB;
+}
+.premium-card.card-culture .p-card-link-text {
+  color: #A07A4A;
+}
+.premium-card.card-culture:hover .p-card-link-text {
+  color: #836136;
+}
+
+/* 4. Archive (Soft Blue/Teal) */
+.premium-card.card-archive .p-card-banner {
+  background-color: #E5ECF0;
+  color: #4C748A;
+}
+.premium-card.card-archive:hover .p-card-banner {
+  background-color: #CEDCE5;
+}
+.premium-card.card-archive .p-card-link-text {
+  color: #4C748A;
+}
+.premium-card.card-archive:hover .p-card-link-text {
+  color: #395769;
+}
+
+/* 5. Join (Fresh Green/Sprout) */
+.premium-card.card-join .p-card-banner {
+  background-color: #E4ECE7;
+  color: #3C7B57;
+}
+.premium-card.card-join:hover .p-card-banner {
+  background-color: #CCE0D3;
+}
+.premium-card.card-join .p-card-link-text {
+  color: #3C7B57;
+}
+.premium-card.card-join:hover .p-card-link-text {
+  color: #2D5D41;
 }
 
 .p-card-tags {
