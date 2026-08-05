@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 <body>
 
   <!-- Navigation Bar -->
-  <header>
+  <header class="header-transparent">
     <div class="nav-container">
       <a href="index.html" class="logo-section">
         <span class="logo-icon-styled">
@@ -44,12 +44,21 @@
       </p>
       <div class="hero-buttons">
         <a href="join.html" class="btn-primary">회원 가입 & 후원하기</a>
+        <a href="about.html" class="btn-secondary">소개 읽어보기</a>
       </div>
     </div>
+    
+    <!-- Scroll Down Indicator Mouse -->
+    <a href="#vision-section" class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-indicator-mouse">
+        <div class="scroll-indicator-wheel"></div>
+      </div>
+    </a>
   </section>
 
   <!-- Slogan & Alert Section -->
-  <section class="section-padding" style="background-color: #ffffff; border-bottom: 1px solid var(--border-color);">
+  <section id="vision-section" class="section-padding reveal" style="background-color: #ffffff; border-bottom: 1px solid var(--border-color);">
     <div class="container">
       <div class="grid-2-cols" style="gap: 30px;">
         <!-- Vision callout -->
@@ -81,7 +90,7 @@
   </section>
 
   <!-- Bento Grid Section -->
-  <section class="section-padding">
+  <section class="section-padding reveal">
     <div class="container">
       <div class="section-title-wrap">
         <h2 class="section-title">🤝 앤드의 실천과 동행</h2>
@@ -201,7 +210,7 @@
   </section>
 
   <!-- Notice Section (Wide Panel) -->
-  <section class="section-padding" style="background-color: #ffffff; border-top: 1px solid var(--border-color);">
+  <section class="section-padding reveal" style="background-color: #ffffff; border-top: 1px solid var(--border-color);">
     <div class="container" style="max-width: 800px;">
       <div class="section-title-wrap">
         <h2 class="section-title">📢 공지사항</h2>

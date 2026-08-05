@@ -135,6 +135,44 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 1500);
     });
   });
+
+  // 4. Scrolled Navbar effect
+  const header = document.querySelector("header");
+  if (header) {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial run
+  }
+
+  // 5. Scroll Reveal Animation Observer
+  const revealElements = document.querySelectorAll(".reveal, .bento-grid");
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -60px 0px"
+    });
+
+    revealElements.forEach(element => {
+      revealObserver.observe(element);
+    });
+  } else {
+    // Fallback if IntersectionObserver is not supported
+    revealElements.forEach(element => {
+      element.classList.add("active");
+    });
+  }
 });
 
 // Toast notification function

@@ -68,20 +68,90 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(250, 248, 245, 0.85); /* Blends with warm beige */
+  background-color: rgba(250, 248, 245, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
-  transition: var(--transition-smooth);
+  transition: padding 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 20px 24px;
   max-width: var(--container-width);
   margin: 0 auto;
+  transition: padding 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header.scrolled {
+  background-color: rgba(250, 248, 245, 0.95);
+  box-shadow: var(--shadow-subtle);
+  border-bottom-color: rgba(226, 230, 226, 0.5);
+}
+
+header.scrolled .nav-container {
+  padding: 12px 24px;
+}
+
+/* Transparent Header (Specifically for the homepage hero) */
+header.header-transparent {
+  background-color: transparent;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+header.header-transparent .logo-text,
+header.header-transparent .nav-link {
+  color: #FAF8F5; /* Cream white */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  transition: var(--transition-smooth);
+}
+
+header.header-transparent .logo-icon-styled {
+  background: rgba(250, 248, 245, 0.15);
+  border: 1px solid rgba(250, 248, 245, 0.25);
+  color: #FAF8F5;
+  box-shadow: none;
+  transition: var(--transition-smooth);
+}
+
+header.header-transparent .nav-link:hover {
+  background-color: rgba(250, 248, 245, 0.12);
+  color: #ffffff;
+}
+
+header.header-transparent.scrolled {
+  background-color: rgba(250, 248, 245, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom-color: var(--border-color);
+  box-shadow: var(--shadow-subtle);
+}
+
+header.header-transparent.scrolled .logo-text {
+  color: var(--text-main);
+  text-shadow: none;
+}
+
+header.header-transparent.scrolled .nav-link {
+  color: var(--text-sub);
+  text-shadow: none;
+}
+
+header.header-transparent.scrolled .logo-icon-styled {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(74, 107, 83, 0.15);
+}
+
+header.header-transparent.scrolled .nav-link:hover,
+header.header-transparent.scrolled .nav-link.active {
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
 }
 
 .logo-section {
@@ -144,51 +214,55 @@ nav {
   box-shadow: 0 6px 16px rgba(200, 122, 104, 0.35);
 }
 
-/* Premium Hero Section (Light Warm Gradient) */
+/* Premium Hero Section (Immersive Background Image) */
 .hero-section {
-  background: radial-gradient(circle at top right, rgba(200, 122, 104, 0.12), transparent), 
-              radial-gradient(circle at bottom left, rgba(74, 107, 83, 0.12), transparent), 
-              var(--bg-card);
-  padding: 180px 0 120px 0;
-  color: var(--text-main);
+  background-image: linear-gradient(rgba(44, 58, 46, 0.45), rgba(44, 58, 46, 0.75)), url('files/serene_forest_path.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  padding: 220px 0 160px 0;
+  color: #FAF8F5;
   text-align: center;
   position: relative;
-  border-bottom: 1px solid var(--border-color);
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-tagline {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
+  letter-spacing: 0.2em;
+  color: #E8EFE9;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.3;
-  margin-bottom: 24px;
-  letter-spacing: -0.03em;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
   word-break: keep-all;
+  color: #FAF8F5;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 .hero-title span {
-  background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FAF8F5;
 }
 
 .hero-desc {
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  font-size: 1.2rem;
-  color: var(--text-sub);
+  max-width: 760px;
+  margin: 0 auto 48px auto;
+  font-size: 1.25rem;
+  color: rgba(250, 248, 245, 0.9);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.8;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .hero-buttons {
@@ -199,36 +273,85 @@ nav {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, #b86b5b 100%);
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
-  padding: 14px 32px;
+  padding: 15px 36px;
   border-radius: 30px;
-  box-shadow: 0 4px 14px rgba(74, 107, 83, 0.3);
+  box-shadow: 0 4px 15px rgba(200, 122, 104, 0.35);
   transition: var(--transition-smooth);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(74, 107, 83, 0.4), var(--shadow-glow);
+  box-shadow: 0 8px 24px rgba(200, 122, 104, 0.5), var(--shadow-glow-accent);
 }
 
 .btn-secondary {
-  background-color: var(--bg-site);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
+  background-color: rgba(250, 248, 245, 0.15);
+  border: 1px solid rgba(250, 248, 245, 0.35);
+  color: #FAF8F5;
   text-decoration: none;
   font-weight: 700;
-  padding: 14px 32px;
+  padding: 15px 36px;
   border-radius: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: var(--transition-smooth);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
+  background-color: rgba(250, 248, 245, 0.3);
+  border-color: #ffffff;
+  color: #ffffff;
   transform: translateY(-3px);
+}
+
+/* Scroll Down Indicator Mouse */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(250, 248, 245, 0.65);
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  transition: var(--transition-smooth);
+}
+
+.scroll-indicator:hover {
+  color: #ffffff;
+}
+
+.scroll-indicator-mouse {
+  width: 24px;
+  height: 40px;
+  border: 2px solid currentColor;
+  border-radius: 12px;
+  position: relative;
+}
+
+.scroll-indicator-wheel {
+  width: 4px;
+  height: 8px;
+  background-color: currentColor;
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-wheel 1.6s infinite;
+}
+
+@keyframes scroll-wheel {
+  0% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, 15px); }
 }
 
 /* Page Banner (For subpages, Light warm gradient) */
@@ -1069,4 +1192,98 @@ footer {
 }
 .page-type-culture .copy-btn:hover {
   background-color: #836136 !important;
+}
+
+/* Scroll Reveal Animation System */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered transition delays for lists/grids */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Bento Card Hover Glow & Border Effect */
+.premium-card {
+  position: relative;
+}
+
+.premium-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+  transition: var(--transition-smooth);
+}
+
+.premium-card:hover::before {
+  background: linear-gradient(135deg, rgba(74, 107, 83, 0.35), rgba(200, 122, 104, 0.2));
+}
+
+.premium-card.card-support:hover::before {
+  background: linear-gradient(135deg, rgba(200, 122, 104, 0.4), rgba(200, 122, 104, 0.1));
+}
+
+.premium-card.card-culture:hover::before {
+  background: linear-gradient(135deg, rgba(160, 122, 74, 0.4), rgba(160, 122, 74, 0.1));
+}
+
+.premium-card.card-archive:hover::before {
+  background: linear-gradient(135deg, rgba(76, 116, 138, 0.4), rgba(76, 116, 138, 0.1));
+}
+
+.premium-card.card-join:hover::before {
+  background: linear-gradient(135deg, rgba(124, 92, 158, 0.4), rgba(124, 92, 158, 0.1));
+}
+
+/* Scroll reveal card staggered entry */
+.bento-grid .premium-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-grid.active .premium-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bento-grid.active .premium-card:nth-child(1) { transition-delay: 50ms; }
+.bento-grid.active .premium-card:nth-child(2) { transition-delay: 150ms; }
+.bento-grid.active .premium-card:nth-child(3) { transition-delay: 250ms; }
+.bento-grid.active .premium-card:nth-child(4) { transition-delay: 350ms; }
+.bento-grid.active .premium-card:nth-child(5) { transition-delay: 450ms; }
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-site);
+}
+::-webkit-scrollbar-thumb {
+  background: #C2CBC5;
+  border-radius: 5px;
+  border: 2px solid var(--bg-site);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
 }
