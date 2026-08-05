@@ -522,19 +522,19 @@ nav {
   color: #395769;
 }
 
-/* 5. Join (Fresh Green/Sprout) */
+/* 5. Join (Lavender / Healing Violet) */
 .premium-card.card-join .p-card-banner {
-  background-color: #E4ECE7;
-  color: #3C7B57;
+  background-color: #F0EDF5;
+  color: #7C5C9E;
 }
 .premium-card.card-join:hover .p-card-banner {
-  background-color: #CCE0D3;
+  background-color: #E3DEED;
 }
 .premium-card.card-join .p-card-link-text {
-  color: #3C7B57;
+  color: #7C5C9E;
 }
 .premium-card.card-join:hover .p-card-link-text {
-  color: #2D5D41;
+  color: #634585;
 }
 
 .p-card-tags {
@@ -921,19 +921,19 @@ footer {
   background-color: #E5ECF0 !important;
 }
 
-/* 5. Join Page Banner (Fresh Sprout Green) */
+/* 5. Join Page Banner (Lavender / Healing Violet) */
 .page-banner.banner-join {
-  background: linear-gradient(135deg, #E4ECE7 0%, var(--bg-site) 100%);
-  border-bottom: 1px solid #CCE0D3;
+  background: linear-gradient(135deg, #F0EDF5 0%, var(--bg-site) 100%);
+  border-bottom: 1px solid #E3DEED;
 }
 .page-banner.banner-join .banner-badge {
-  background-color: rgba(60, 123, 87, 0.1);
-  border-color: rgba(60, 123, 87, 0.2);
-  color: #3C7B57;
+  background-color: rgba(124, 92, 158, 0.1);
+  border-color: rgba(124, 92, 158, 0.2);
+  color: #7C5C9E;
 }
 .page-type-join .nav-link.active {
-  color: #3C7B57 !important;
-  background-color: #E4ECE7 !important;
+  color: #7C5C9E !important;
+  background-color: #F0EDF5 !important;
 }
 
 /* Page specific button and timeline overrides for unified theme styling */
@@ -966,13 +966,13 @@ footer {
 .page-type-join .btn-primary,
 .page-type-join button[type="submit"],
 .page-type-join .btn-submit {
-  background: linear-gradient(135deg, #3C7B57 0%, #2D5D41 100%) !important;
-  box-shadow: 0 4px 14px rgba(60, 123, 87, 0.3) !important;
+  background: linear-gradient(135deg, #7C5C9E 0%, #634585 100%) !important;
+  box-shadow: 0 4px 14px rgba(124, 92, 158, 0.3) !important;
   border: none !important;
   color: white !important;
 }
 .page-type-join .btn-primary:hover,
 .page-type-join button[type="submit"]:hover,
 .page-type-join .btn-submit:hover {
-  box-shadow: 0 8px 20px rgba(60, 123, 87, 0.4), 0 0 20px rgba(60, 123, 87, 0.2) !important;
+  box-shadow: 0 8px 20px rgba(124, 92, 158, 0.4), 0 0 20px rgba(124, 92, 158, 0.2) !important;
 }
