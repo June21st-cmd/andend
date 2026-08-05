@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -94,25 +94,25 @@
 
         <!-- Interactive Forms (2-column layout) -->
         <div class="section-title-wrap">
-          <h2 class="section-title">✍️ 온라인 가입 및 신청 창구</h2>
+          <h2 class="section-title">✍️ 회원 가입</h2>
         </div>
 
         <div class="grid-2-cols" style="margin-bottom: 50px;">
-          <!-- Left: Registration Form -->
+          <!-- Left: Registration Form (Individual) -->
           <div class="white-panel">
-            <h3 style="font-weight: 800; margin-bottom: 8px; color: var(--color-primary);">1. 회원 및 후원 가입 신청</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">정보를 입력하고 전송하시면 가상 신청 토스트 피드백이 발생합니다.</p>
+            <h3 style="font-weight: 800; margin-bottom: 8px; color: var(--color-primary);">1. 개인 회원 가입</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">정보를 입력하고 전송하시면 가입 신청이 완료됩니다.</p>
             
             <form id="member-form">
               <div class="form-group" style="margin-bottom: 15px;">
-                <label for="reg-name" style="display: block; font-weight: 700; margin-bottom: 6px;">성명 (또는 단체명)</label>
+                <label for="reg-name" style="display: block; font-weight: 700; margin-bottom: 6px;">성명</label>
                 <input type="text" id="reg-name" class="form-control" placeholder="예: 홍길동" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit;">
               </div>
               <div class="form-group" style="margin-bottom: 15px;">
                 <label for="reg-email" style="display: block; font-weight: 700; margin-bottom: 6px;">이메일 주소</label>
                 <input type="email" id="reg-email" class="form-control" placeholder="example@email.com" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit;">
               </div>
-              <div class="form-group" style="margin-bottom: 20px;">
+              <div class="form-group" style="margin-bottom: 15px;">
                 <label for="reg-type" style="display: block; font-weight: 700; margin-bottom: 6px;">가입 신청 유형</label>
                 <select id="reg-type" class="form-control" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; background-color: var(--bg-card);">
                   <option value="member">활동 회원 (회비 납부 및 모둠 활동 참여)</option>
@@ -120,23 +120,10 @@
                   <option value="one-time">일시 후원</option>
                 </select>
               </div>
-              <button type="submit" class="btn-primary" style="width: 100%; border: none; font-weight: 700; padding: 12px 20px; border-radius: 30px; cursor: pointer;">가입 신청 제출</button>
-            </form>
-          </div>
-
-          <!-- Right: Module signup Form -->
-          <div class="white-panel">
-            <h3 style="font-weight: 800; margin-bottom: 8px; color: var(--color-accent);">2. 활동 "모둠" 신청</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">함께 활동하고 싶은 전문 소그룹 모둠을 선택하여 참여 의사를 밝혀주세요.</p>
-            
-            <form id="module-form">
               <div class="form-group" style="margin-bottom: 15px;">
-                <label for="mod-name" style="display: block; font-weight: 700; margin-bottom: 6px;">성명</label>
-                <input type="text" id="mod-name" class="form-control" placeholder="예: 성춘향" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit;">
-              </div>
-              <div class="form-group" style="margin-bottom: 15px;">
-                <label for="mod-choice" style="display: block; font-weight: 700; margin-bottom: 6px;">참여 희망 모둠</label>
+                <label for="mod-choice" style="display: block; font-weight: 700; margin-bottom: 6px;">참여 희망 모둠 (선택사항)</label>
                 <select id="mod-choice" class="form-control" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; background-color: var(--bg-card);">
+                  <option value="none">선택 안 함 (활동 회원만 선택)</option>
                   <option value="monitoring">🔎 사건 및 제도 모니터링 모둠 (교단 감시/헌의안)</option>
                   <option value="support">🤝 피해자 연대 및 지지 모둠 (상담/동행/치유)</option>
                   <option value="education">📚 성평등 문화 및 교육 모둠 (체크리스트/예배문)</option>
@@ -144,9 +131,42 @@
               </div>
               <div class="form-group" style="margin-bottom: 20px;">
                 <label for="mod-message" style="display: block; font-weight: 700; margin-bottom: 6px;">한 줄 다짐 및 기대</label>
-                <textarea id="mod-message" class="form-control" rows="3" placeholder="예: 평등하고 안전한 교회를 일구는 데 힘을 보태고 싶습니다." required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; resize: vertical;"></textarea>
+                <textarea id="mod-message" class="form-control" rows="2" placeholder="예: 평등하고 안전한 교회를 일구는 데 힘을 보태고 싶습니다." required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; resize: vertical;"></textarea>
               </div>
-              <button type="submit" class="btn-submit" style="width: 100%; background: var(--color-accent); color: #ffffff !important; border: none; font-weight: 700; padding: 12px 20px; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 12px rgba(200, 122, 104, 0.25); transition: var(--transition-smooth);">모둠 참여 신청</button>
+              <button type="submit" class="btn-primary" style="width: 100%; border: none; font-weight: 700; padding: 12px 20px; border-radius: 30px; cursor: pointer;">개인 가입 신청 제출</button>
+            </form>
+          </div>
+
+          <!-- Right: Registration Form (Group/Church) -->
+          <div class="white-panel">
+            <h3 style="font-weight: 800; margin-bottom: 8px; color: var(--color-accent);">2. 단체 회원 가입</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">단체 및 교회 연대 회원 가입을 위한 신청란입니다.</p>
+            
+            <form id="module-form">
+              <div class="form-group" style="margin-bottom: 15px;">
+                <label for="group-category" style="display: block; font-weight: 700; margin-bottom: 6px;">단체/교회 구분</label>
+                <select id="group-category" class="form-control" style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; background-color: var(--bg-card);">
+                  <option value="organization">🏢 일반 연대 단체</option>
+                  <option value="church">⛪ 교회</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom: 15px;">
+                <label for="mod-name" style="display: block; font-weight: 700; margin-bottom: 6px;">단체명 / 교회명</label>
+                <input type="text" id="mod-name" class="form-control" placeholder="예: OO교회 또는 OO연대" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit;">
+              </div>
+              <div class="form-group" style="margin-bottom: 15px;">
+                <label for="contact-name" style="display: block; font-weight: 700; margin-bottom: 6px;">담당자 성명</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="예: 김선택" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit;">
+              </div>
+              <div class="form-group" style="margin-bottom: 15px;">
+                <label for="contact-email" style="display: block; font-weight: 700; margin-bottom: 6px;">담당자 이메일 주소</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="contact@email.com" required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit;">
+              </div>
+              <div class="form-group" style="margin-bottom: 20px;">
+                <label for="group-message" style="display: block; font-weight: 700; margin-bottom: 6px;">연대 한 줄 다짐 및 기대</label>
+                <textarea id="group-message" class="form-control" rows="2" placeholder="예: 앤드의 사역과 성평등한 기장 만들기에 기꺼이 연대합니다." required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; resize: vertical;"></textarea>
+              </div>
+              <button type="submit" class="btn-submit" style="width: 100%; background: var(--color-accent); color: #ffffff !important; border: none; font-weight: 700; padding: 12px 20px; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 12px rgba(200, 122, 104, 0.25); transition: var(--transition-smooth);">단체 가입 신청 제출</button>
             </form>
           </div>
         </div>
