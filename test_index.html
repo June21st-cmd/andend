@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>공동행동 "앤드" (END, AND) | 디자인 프리뷰</title>
+  <title>공동행동 "앤드" (END, AND)</title>
   <link rel="stylesheet" href="style_test.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
 <body>
 
   <!-- Navigation Bar -->
-  <header>
+  <header class="header-transparent">
     <div class="nav-container">
-      <a href="test_index.html" class="logo-section">
+      <a href="index.html" class="logo-section">
         <span class="logo-icon-styled">
           <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -25,11 +25,11 @@
         <span class="logo-text">공동행동 앤드</span>
       </a>
       <nav>
-        <a href="test_about.html" class="nav-link">소개</a>
-        <a href="test_support.html" class="nav-link">지원</a>
-        <a href="test_culture.html" class="nav-link">자료실</a>
-        <a href="test_archive.html" class="nav-link">활동</a>
-        <a href="test_join.html" class="nav-link nav-cta">참여/후원</a>
+        <a href="about.html" class="nav-link">소개</a>
+        <a href="support.html" class="nav-link">지원</a>
+        <a href="culture.html" class="nav-link">자료실</a>
+        <a href="archive.html" class="nav-link">활동</a>
+        <a href="join.html" class="nav-link nav-cta">참여/후원</a>
       </nav>
     </div>
   </header>
@@ -43,13 +43,22 @@
         성폭력 없는 안전한 신앙공동체와 교회 문화를 만듭니다.<br>기장 교인들이 함께 연대하고 감시하여 정의롭고 평등한 교회 공동체를 일구어 갑니다.
       </p>
       <div class="hero-buttons">
-        <a href="test_join.html" class="btn-primary">회원 가입 & 후원하기</a>
+        <a href="join.html" class="btn-primary">회원 가입 & 후원하기</a>
+        <a href="about.html" class="btn-secondary">소개 읽어보기</a>
       </div>
     </div>
+    
+    <!-- Scroll Down Indicator Mouse -->
+    <a href="#vision-section" class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-indicator-mouse">
+        <div class="scroll-indicator-wheel"></div>
+      </div>
+    </a>
   </section>
 
   <!-- Slogan & Alert Section -->
-  <section class="section-padding" style="background-color: #ffffff; border-bottom: 1px solid var(--border-color);">
+  <section id="vision-section" class="section-padding reveal" style="background-color: #ffffff; border-bottom: 1px solid var(--border-color);">
     <div class="container">
       <div class="grid-2-cols" style="gap: 30px;">
         <!-- Vision callout -->
@@ -81,7 +90,7 @@
   </section>
 
   <!-- Bento Grid Section -->
-  <section class="section-padding">
+  <section class="section-padding reveal">
     <div class="container">
       <div class="section-title-wrap">
         <h2 class="section-title">🤝 앤드의 실천과 동행</h2>
@@ -89,7 +98,7 @@
 
       <div class="bento-grid">
         <!-- About Card (Bento col-3) -->
-        <a href="test_about.html" class="premium-card bento-col-3 card-about">
+        <a href="about.html" class="premium-card bento-col-3 card-about">
           <div class="p-card-banner">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
@@ -109,7 +118,7 @@
         </a>
 
         <!-- Support Card (Bento col-3) -->
-        <a href="test_support.html" class="premium-card bento-col-3 card-support">
+        <a href="support.html" class="premium-card bento-col-3 card-support">
           <div class="p-card-banner">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2c-.5 1.5-2 3-2 4.5s1 2.5 2 2.5 2-1 2-2.5S12.5 3.5 12 2z"></path>
@@ -131,7 +140,7 @@
         </a>
 
         <!-- Culture Card (Bento col-2) -->
-        <a href="test_culture.html" class="premium-card bento-col-2 card-culture">
+        <a href="culture.html" class="premium-card bento-col-2 card-culture">
           <div class="p-card-banner">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
@@ -152,7 +161,7 @@
         </a>
 
         <!-- Archive Card (Bento col-2) -->
-        <a href="test_archive.html" class="premium-card bento-col-2 card-archive">
+        <a href="archive.html" class="premium-card bento-col-2 card-archive">
           <div class="p-card-banner">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -176,7 +185,7 @@
         </a>
 
         <!-- Join Card (Bento col-2) -->
-        <a href="test_join.html" class="premium-card bento-col-2 card-join">
+        <a href="join.html" class="premium-card bento-col-2 card-join">
           <div class="p-card-banner">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22V12"></path>
@@ -201,41 +210,120 @@
   </section>
 
   <!-- Notice Section (Wide Panel) -->
-  <section class="section-padding" style="background-color: #ffffff; border-top: 1px solid var(--border-color);">
+  <section class="section-padding reveal" style="background-color: #ffffff; border-top: 1px solid var(--border-color);">
     <div class="container" style="max-width: 800px;">
       <div class="section-title-wrap">
         <h2 class="section-title">📢 공지사항</h2>
       </div>
 
-      <div class="white-panel">
-        <h3 style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; color: var(--color-primary);">🗓️ 공동행동 "앤드" 출범식</h3>
-        <p style="font-size: 1.05rem; margin-bottom: 24px; color: var(--text-sub);">
-          <strong>일시</strong>: 2026년 9월 1일 (화) 저녁 7시 30분 ~ 9시 00분<br>
-          <strong>장소</strong>: 향린교회 1층 향우실
-        </p>
-        
-        <details>
-          <summary>🔍 출범식 순서 보기</summary>
-          <div class="details-content">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>19:30 ~ 19:40</strong>: 오프닝 공연 (대학원 풍물패 '한얼')</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>19:40 ~ 19:45</strong>: 여는 말 (사회자 인사 및 내빈 소개)</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>19:45 ~ 20:10</strong>: 앤드 소개 (설립 배경 설명, 비전 및 앞으로의 활동)</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>20:10 ~ 20:20</strong>: 함께 만드는 사람들 (운영위원/준비위원 인사)</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>20:20 ~ 20:30</strong>: 감사패 증정 (고 임보라 목사님께 감사와 기억을 기리며)</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>20:30 ~ 20:40</strong>: 축하 공연 2 (여민회 '공명' 합창 등)</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>20:40 ~ 21:05</strong>: 연대와 다짐의 목소리 (회원, 여성단체, 이웃교단, 시민사회 등 연대 발언)</li>
-              <li style="padding: 8px 0; border-bottom: 1px dashed var(--border-color);"><strong>21:05 ~ 21:10</strong>: 공동다짐문 낭독 및 함께 노래 부르기</li>
-              <li style="padding: 8px 0;"><strong>21:10 ~ </strong>: 단체 사진 촬영 및 마무리</li>
-            </ul>
-          </div>
-        </details>
+      <div class="white-panel" style="display: flex; gap: 28px; align-items: flex-start; padding: 40px; flex-wrap: wrap;">
+        <div class="date-badge" style="width: 90px; height: 95px; border-radius: 16px; background-color: var(--color-primary); color: #ffffff; box-shadow: 0 10px 20px rgba(74, 107, 83, 0.15); border: none;">
+          <span class="date-time" style="font-size: 1.8rem;">9/1</span>
+          <span class="date-label" style="font-size: 0.8rem; margin-top: 4px; opacity: 0.95;">TUE</span>
+        </div>
+        <div style="flex-grow: 1; min-width: 250px;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.6rem; font-weight: 800; margin-bottom: 14px; color: var(--color-primary-dark);">공동행동 "앤드" 출범식 및 여는 모임</h3>
+          <p style="font-size: 1.05rem; margin-bottom: 24px; color: var(--text-sub); line-height: 1.7;">
+            성폭력 없는 기장을 만들기 위해 한 걸음을 떼는 앤드(END, AND)의 첫걸음에 동참해 주세요.<br><br>
+            📍 <strong>장소</strong>: 향린교회 1층 향우실<br>
+            ⏰ <strong>일시</strong>: 2026년 9월 1일 (화) 저녁 7시 30분 ~ 9시 00분
+          </p>
+          
+          <details style="margin-bottom: 0;">
+            <summary>📋 출범식 상세 일정 순서 보기</summary>
+            <div class="details-content">
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge">
+                    <span class="date-time">19:30</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>오프닝 공연</strong> <span style="color: var(--text-sub); margin-left: 8px;">대학원 풍물패 '한얼'</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge">
+                    <span class="date-time">19:40</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>여는 말</strong> <span style="color: var(--text-sub); margin-left: 8px;">사회자 인사 및 내빈 소개</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge">
+                    <span class="date-time">19:45</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>앤드 소개</strong> <span style="color: var(--text-sub); margin-left: 8px;">설립 배경 설명, 비전 및 활동 발표</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge">
+                    <span class="date-time">20:10</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>함께 만드는 사람들</strong> <span style="color: var(--text-sub); margin-left: 8px;">운영위원 및 준비위원 연대 소개</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge" style="background-color: var(--color-accent-light); color: var(--color-accent); border-color: rgba(200,122,104,0.15);">
+                    <span class="date-time">20:20</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>감사패 증정</strong> <span style="color: var(--text-sub); margin-left: 8px;">고 임보라 목사의 삶과 사랑을 기리며</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge">
+                    <span class="date-time">20:30</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>축하 공연</strong> <span style="color: var(--text-sub); margin-left: 8px;">여민회 '공명' 합창 등 연대 공연</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge">
+                    <span class="date-time">20:40</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>연대와 다짐의 목소리</strong> <span style="color: var(--text-sub); margin-left: 8px;">회원, 여성단체, 시민사회 연대 발언</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px dashed var(--border-color);">
+                  <div class="date-badge" style="background-color: var(--color-accent-light); color: var(--color-accent); border-color: rgba(200,122,104,0.15);">
+                    <span class="date-time">21:05</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>공동다짐문 낭독</strong> <span style="color: var(--text-sub); margin-left: 8px;">다짐문 낭독 및 다 함께 연대 노래</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center; padding: 12px 0;">
+                  <div class="date-badge">
+                    <span class="date-time">21:10</span>
+                    <span class="date-label">PM</span>
+                  </div>
+                  <div style="font-size: 1.02rem; color: var(--text-main);">
+                    <strong>단체 사진 촬영</strong> <span style="color: var(--text-sub); margin-left: 8px;">기억을 남기고 마무리</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Floating Emergency Hotline Button -->
-  <a href="test_support.html" class="floating-hotline">
+  <a href="support.html" class="floating-hotline">
     <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; stroke: #ffffff;">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
@@ -259,6 +347,8 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
 
 
 
