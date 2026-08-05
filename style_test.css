@@ -963,18 +963,39 @@ footer {
   border-color: #A07A4A;
 }
 
-.page-type-join .btn-primary,
-.page-type-join button[type="submit"],
-.page-type-join .btn-submit {
+/* Join Page Button Specific Styles: Lavender for First Form, Plum for Second Form */
+.page-type-join .btn-primary {
   background: linear-gradient(135deg, #7C5C9E 0%, #634585 100%) !important;
   box-shadow: 0 4px 14px rgba(124, 92, 158, 0.3) !important;
   border: none !important;
   color: white !important;
 }
-.page-type-join .btn-primary:hover,
-.page-type-join button[type="submit"]:hover,
-.page-type-join .btn-submit:hover {
+.page-type-join .btn-primary:hover {
   box-shadow: 0 8px 20px rgba(124, 92, 158, 0.4), 0 0 20px rgba(124, 92, 158, 0.2) !important;
+}
+
+.page-type-join .btn-submit {
+  background: linear-gradient(135deg, #9D5086 0%, #7E3E6A 100%) !important;
+  box-shadow: 0 4px 14px rgba(157, 80, 134, 0.3) !important;
+  border: none !important;
+  color: white !important;
+}
+.page-type-join .btn-submit:hover {
+  box-shadow: 0 8px 20px rgba(157, 80, 134, 0.4), 0 0 20px rgba(157, 80, 134, 0.2) !important;
+}
+
+/* Header Navigation CTA Button Lavender theme for Join Page (No Orange hover) */
+.page-type-join .nav-cta {
+  background: linear-gradient(135deg, #7C5C9E 0%, #634585 100%) !important;
+  box-shadow: 0 4px 12px rgba(124, 92, 158, 0.25) !important;
+}
+.page-type-join .nav-cta:hover {
+  background: linear-gradient(135deg, #634585 0%, #7C5C9E 100%) !important;
+  box-shadow: 0 6px 16px rgba(124, 92, 158, 0.35) !important;
+}
+.page-type-join .nav-link.nav-cta.active {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #7C5C9E 0%, #634585 100%) !important;
 }
 
 /* Specific Icon Color Classes */
@@ -1033,6 +1054,9 @@ footer {
 }
 .page-type-join [style*="var(--color-primary)"] {
   color: #7C5C9E !important;
+}
+.page-type-join [style*="var(--color-accent)"] {
+  color: #9D5086 !important;
 }
 
 /* Culture Copy Card Overrides */
