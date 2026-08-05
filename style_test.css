@@ -345,37 +345,34 @@ nav {
   margin-bottom: 0;
 }
 
-/* Modern Asymmetric Bento Grid Layout */
+/* Modern Bento Grid Layout (6-Column System) */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   margin-bottom: 50px;
 }
 
-.bento-wide {
-  grid-column: span 2;
-}
-
-.bento-tall {
-  grid-row: span 2;
-}
-
-.bento-full-width {
+.bento-col-3 {
   grid-column: span 3;
+}
+
+.bento-col-2 {
+  grid-column: span 2;
 }
 
 @media (max-width: 992px) {
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .bento-wide {
-    grid-column: span 2;
+  .bento-col-3 {
+    grid-column: span 1;
   }
-  .bento-tall {
-    grid-row: span 1;
+  .bento-col-2 {
+    grid-column: span 1;
   }
-  .bento-full-width {
+  /* On tablet, Card 5 (Join) stretches to fill the bottom row of 2-columns */
+  .premium-card.card-join {
     grid-column: span 2;
   }
 }
@@ -384,13 +381,9 @@ nav {
   .bento-grid {
     grid-template-columns: 1fr;
   }
-  .bento-wide {
-    grid-column: span 1;
-  }
-  .bento-tall {
-    grid-row: span 1;
-  }
-  .bento-full-width {
+  .bento-col-3,
+  .bento-col-2,
+  .premium-card.card-join {
     grid-column: span 1;
   }
 }
