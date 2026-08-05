@@ -862,3 +862,117 @@ footer {
   50% { box-shadow: 0 10px 30px rgba(200, 122, 104, 0.6); }
   100% { box-shadow: 0 10px 25px rgba(200, 122, 104, 0.35); }
 }
+
+/* Page Banner Category Specific Themes */
+
+/* 1. About Page Banner (Sage Green) */
+.page-banner.banner-about {
+  background: linear-gradient(135deg, #E8EFE9 0%, var(--bg-site) 100%);
+  border-bottom: 1px solid #E2E6E2;
+}
+.page-banner.banner-about .banner-badge {
+  background-color: rgba(74, 107, 83, 0.1);
+  border-color: rgba(74, 107, 83, 0.2);
+  color: #4A6B53;
+}
+
+/* 2. Support Page Banner (Soft Rose) */
+.page-banner.banner-support {
+  background: linear-gradient(135deg, #F6EBE8 0%, var(--bg-site) 100%);
+  border-bottom: 1px solid #EAD4CE;
+}
+.page-banner.banner-support .banner-badge {
+  background-color: rgba(200, 122, 104, 0.1);
+  border-color: rgba(200, 122, 104, 0.2);
+  color: #C87A68;
+}
+.page-type-support .nav-link.active {
+  color: #C87A68 !important;
+  background-color: #F6EBE8 !important;
+}
+
+/* 3. Culture Page Banner (Warm Amber/Yellow) */
+.page-banner.banner-culture {
+  background: linear-gradient(135deg, #F7F2E6 0%, var(--bg-site) 100%);
+  border-bottom: 1px solid #EDE2CB;
+}
+.page-banner.banner-culture .banner-badge {
+  background-color: rgba(160, 122, 74, 0.1);
+  border-color: rgba(160, 122, 74, 0.2);
+  color: #A07A4A;
+}
+.page-type-culture .nav-link.active {
+  color: #A07A4A !important;
+  background-color: #F7F2E6 !important;
+}
+
+/* 4. Archive Page Banner (Soft Blue/Teal) */
+.page-banner.banner-archive {
+  background: linear-gradient(135deg, #E5ECF0 0%, var(--bg-site) 100%);
+  border-bottom: 1px solid #CEDCE5;
+}
+.page-banner.banner-archive .banner-badge {
+  background-color: rgba(76, 116, 138, 0.1);
+  border-color: rgba(76, 116, 138, 0.2);
+  color: #4C748A;
+}
+.page-type-archive .nav-link.active {
+  color: #4C748A !important;
+  background-color: #E5ECF0 !important;
+}
+
+/* 5. Join Page Banner (Fresh Sprout Green) */
+.page-banner.banner-join {
+  background: linear-gradient(135deg, #E4ECE7 0%, var(--bg-site) 100%);
+  border-bottom: 1px solid #CCE0D3;
+}
+.page-banner.banner-join .banner-badge {
+  background-color: rgba(60, 123, 87, 0.1);
+  border-color: rgba(60, 123, 87, 0.2);
+  color: #3C7B57;
+}
+.page-type-join .nav-link.active {
+  color: #3C7B57 !important;
+  background-color: #E4ECE7 !important;
+}
+
+/* Page specific button and timeline overrides for unified theme styling */
+.page-type-support .btn-primary {
+  background: linear-gradient(135deg, #C87A68 0%, #B25F4C 100%);
+  box-shadow: 0 4px 14px rgba(200, 122, 104, 0.3);
+}
+.page-type-support .btn-primary:hover {
+  box-shadow: 0 8px 20px rgba(200, 122, 104, 0.4), var(--shadow-glow-accent);
+}
+.page-type-support .timeline-dot {
+  border-color: #C87A68;
+  box-shadow: 0 0 0 4px rgba(200, 122, 104, 0.15);
+}
+
+.page-type-culture .btn-primary {
+  background: linear-gradient(135deg, #A07A4A 0%, #836136 100%);
+  box-shadow: 0 4px 14px rgba(160, 122, 74, 0.3);
+}
+.page-type-culture .btn-primary:hover {
+  box-shadow: 0 8px 20px rgba(160, 122, 74, 0.4), 0 0 20px rgba(160, 122, 74, 0.2);
+}
+.page-type-culture .interactive-check-item input[type="checkbox"] {
+  accent-color: #A07A4A;
+}
+.page-type-culture .interactive-check-item:hover {
+  border-color: #A07A4A;
+}
+
+.page-type-join .btn-primary,
+.page-type-join button[type="submit"],
+.page-type-join .btn-submit {
+  background: linear-gradient(135deg, #3C7B57 0%, #2D5D41 100%) !important;
+  box-shadow: 0 4px 14px rgba(60, 123, 87, 0.3) !important;
+  border: none !important;
+  color: white !important;
+}
+.page-type-join .btn-primary:hover,
+.page-type-join button[type="submit"]:hover,
+.page-type-join .btn-submit:hover {
+  box-shadow: 0 8px 20px rgba(60, 123, 87, 0.4), 0 0 20px rgba(60, 123, 87, 0.2) !important;
+}
