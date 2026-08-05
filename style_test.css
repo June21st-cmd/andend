@@ -357,16 +357,18 @@ nav {
 /* Page Banner (For subpages, Light warm gradient) */
 .page-banner {
   background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--bg-site) 100%);
-  padding: 140px 0 70px 0;
+  padding: 130px 0 50px 0;
   color: var(--text-main);
   border-bottom: 1px solid var(--border-color);
 }
 
 .banner-title-styled {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-top: 10px;
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin-top: 0;
 }
 
 .banner-badge {
