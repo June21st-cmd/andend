@@ -1,18 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공동행동 "앤드" (END, AND) | 참여 및 후원</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page-type-join">
 
   <!-- Navigation Bar -->
   <header>
     <div class="nav-container">
       <a href="index.html" class="logo-section">
-        <span class="logo-icon-styled">🚪</span>
+        <span class="logo-icon-styled">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </span>
         <span class="logo-text">공동행동 앤드</span>
       </a>
       <nav>
@@ -26,9 +34,9 @@
   </header>
 
   <!-- Banner -->
-  <section class="page-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #064e3b 100%);">
+  <section class="page-banner banner-join">
     <div class="container">
-      <span class="banner-badge" style="background-color: rgba(16, 185, 129, 0.2); border-color: rgba(52, 211, 153, 0.3); color: #6ee7b7;">🌱 JOIN US & SUPPORT</span>
+      <span class="banner-badge">🌱 JOIN US & SUPPORT</span>
       <h1 class="banner-title-styled">5. 참여 및 후원하기</h1>
     </div>
   </section>
@@ -40,7 +48,11 @@
         
         <!-- Slogan/Vision callout -->
         <div class="premium-callout" style="margin-bottom: 50px;">
-          <div class="p-callout-icon icon-blue">💚</div>
+          <div class="p-callout-icon icon-lavender">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
           <div class="p-callout-content">
             <h3 class="p-callout-title">동역자가 되어주세요</h3>
             <p class="p-callout-desc" style="font-size: 1.02rem; margin-top: 5px;">
@@ -121,7 +133,7 @@
                 <label for="mod-message" style="display: block; font-weight: 700; margin-bottom: 6px;">한 줄 다짐 및 기대</label>
                 <textarea id="mod-message" class="form-control" rows="2" placeholder="예: 평등하고 안전한 교회를 일구는 데 힘을 보태고 싶습니다." required style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); font-family: inherit; resize: vertical;"></textarea>
               </div>
-              <button type="submit" class="btn-submit" style="width: 100%; font-weight: 700; padding: 12px 20px; border-radius: 30px; cursor: pointer;">개인 가입 신청 제출</button>
+              <button type="submit" class="btn-primary" style="width: 100%; border: none; font-weight: 700; padding: 12px 20px; border-radius: 30px; cursor: pointer;">개인 가입 신청 제출</button>
             </form>
           </div>
 
@@ -163,6 +175,14 @@
     </section>
   </main>
 
+  <!-- Floating Emergency Hotline Button -->
+  <a href="support.html" class="floating-hotline">
+    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; stroke: #ffffff;">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+    <span>긴급 핫라인 상담</span>
+  </a>
+
   <!-- Footer -->
   <footer>
     <div class="container" style="text-align: center;">
@@ -180,6 +200,8 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
 
 
 
