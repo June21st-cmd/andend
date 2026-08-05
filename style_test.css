@@ -976,3 +976,73 @@ footer {
 .page-type-join .btn-submit:hover {
   box-shadow: 0 8px 20px rgba(124, 92, 158, 0.4), 0 0 20px rgba(124, 92, 158, 0.2) !important;
 }
+
+/* Specific Icon Color Classes */
+.icon-green {
+  background-color: rgba(74, 107, 83, 0.1) !important;
+  color: #4A6B53 !important;
+  box-shadow: 0 4px 14px rgba(74, 107, 83, 0.15) !important;
+}
+.icon-rose {
+  background-color: rgba(200, 122, 104, 0.1) !important;
+  color: #C87A68 !important;
+  box-shadow: 0 4px 14px rgba(200, 122, 104, 0.15) !important;
+}
+.icon-amber {
+  background-color: rgba(160, 122, 74, 0.1) !important;
+  color: #A07A4A !important;
+  box-shadow: 0 4px 14px rgba(160, 122, 74, 0.15) !important;
+}
+.icon-indigo {
+  background-color: rgba(76, 116, 138, 0.1) !important;
+  color: #4C748A !important;
+  box-shadow: 0 4px 14px rgba(76, 116, 138, 0.15) !important;
+}
+.icon-lavender {
+  background-color: rgba(124, 92, 158, 0.1) !important;
+  color: #7C5C9E !important;
+  box-shadow: 0 4px 14px rgba(124, 92, 158, 0.15) !important;
+}
+
+/* Page Callout Hover & Text Color Overrides */
+.page-type-about .premium-callout:hover {
+  border-color: rgba(74, 107, 83, 0.4);
+}
+.page-type-support .premium-callout:hover {
+  border-color: rgba(200, 122, 104, 0.4);
+}
+.page-type-culture .premium-callout:hover {
+  border-color: rgba(160, 122, 74, 0.4);
+}
+.page-type-archive .premium-callout:hover {
+  border-color: rgba(76, 116, 138, 0.4);
+}
+.page-type-join .premium-callout:hover {
+  border-color: rgba(124, 92, 158, 0.4);
+}
+
+/* Page-specific inline green color swaps */
+.page-type-support [style*="var(--color-primary)"] {
+  color: #C87A68 !important;
+}
+.page-type-culture [style*="var(--color-primary)"] {
+  color: #A07A4A !important;
+}
+.page-type-archive [style*="var(--color-primary)"] {
+  color: #4C748A !important;
+}
+.page-type-join [style*="var(--color-primary)"] {
+  color: #7C5C9E !important;
+}
+
+/* Culture Copy Card Overrides */
+.page-type-culture .premium-copy-card {
+  border-color: rgba(160, 122, 74, 0.3) !important;
+}
+.page-type-culture .copy-btn {
+  background: #A07A4A !important;
+  box-shadow: 0 4px 10px rgba(160, 122, 74, 0.2) !important;
+}
+.page-type-culture .copy-btn:hover {
+  background-color: #836136 !important;
+}
