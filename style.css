@@ -1609,8 +1609,7 @@ details[open] summary {
 
 /* Left column: large decorative number + serif title */
 .book-left {
-  position: sticky;
-  top: 120px;
+  position: static;
 }
 
 .book-section-number {
